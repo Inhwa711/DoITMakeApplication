@@ -1,5 +1,6 @@
 package com.cookandroid.bottom_setting;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
@@ -28,5 +29,18 @@ public class Another_User extends ListFragment {
     @Override
     public void onListItemClick(@NonNull ListView l, @NonNull View v, int position, long id) {
         getListView().setItemChecked(position, false);
+
+        switch(position) {
+            case (1):
+                Intent intent_account = new Intent(getActivity(), Another_Account.class);
+                startActivity(intent_account);
+                break;
+
+            case (2):
+
+                Intent intent2 = new Intent(getActivity(), Another_Logout.class);
+                startActivity(intent2);
+                break;
+        }
     }
 }

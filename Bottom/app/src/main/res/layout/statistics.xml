@@ -12,7 +12,7 @@
         android:text="@string/Statistics"
         android:textSize="40dp"/>
 
-    <com.github.mikephil.charting.charts.LineChart
+    <com.github.mikephil.charting.charts.BarChart
         android:id="@+id/chart"
         android:layout_width="match_parent"
         android:layout_height="400dp"

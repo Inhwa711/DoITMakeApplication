@@ -17,4 +17,8 @@
     <color name="DarkColorBarDark">#454331</color>
     <color name="DarkAccentColor">#191818</color>
     <color name="DarkBackground">#000000</color>
+
+    <color name="colorYellow">#f8d85a</color>
+    <color name="colordarkYellow">#d2b952</color>
+
 </resources>

@@ -47,6 +47,7 @@
     <string name="SelectLanguage">Select Language</string>
     <string name="Select">Select </string>
     <string name="SelectTheme">Select Theme</string>
+    <string name="SelectGender">Select Gender</string>
 
     <!--SelectGoal View Contents-->
     <string name="InputGoal">Write Your Goal.</string>
@@ -59,5 +60,14 @@
     <string name="Save">SAVE</string>
     <string name="Cancel">CANCEL</string>
 
+    <!--Naver Login-->
+    <string name="naver_client_id">S1lQJB5lwu6g49kxQ6FE</string>
+    <string name="naver_client_secret">GsDryj6kDC</string>
+    <string name="naver_client_name">Project</string>
+
+    <string name="naver_google">Or</string>
+
+    <!--Web Server-->
+    <string name="web_IP">119.197.127.93</string>
 
 </resources>

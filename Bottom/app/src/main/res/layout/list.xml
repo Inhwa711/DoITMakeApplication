@@ -16,29 +16,30 @@
             android:layout_weight="1" />
 
         <ImageButton
+            android:id="@+id/delete"
+            android:layout_width="110px"
+            android:layout_height="100px"
+            android:visibility="gone"
+            android:background="@drawable/r4"/>
+
+        <ImageButton
             android:id="@+id/selectAll"
-            android:layout_width="150px"
-            android:layout_height="match_parent"
-            app:srcCompat="@android:drawable/checkbox_off_background"
-            android:visibility="invisible" />
+            android:layout_width="110px"
+            android:layout_height="100px"
+            android:background="@drawable/r3"
+            android:visibility="gone" />
 
         <ImageButton
             android:id="@+id/modify"
-            android:layout_width="150px"
-            android:layout_height="wrap_content"
-            app:srcCompat="@android:drawable/ic_menu_edit" />
-
-        <ImageButton
-            android:id="@+id/delete"
-            android:layout_width="150px"
-            android:layout_height="match_parent"
-            app:srcCompat="@android:drawable/ic_menu_delete" />
+            android:layout_width="110px"
+            android:layout_height="100px"
+            android:background="@drawable/r2" />
 
         <ImageButton
             android:id="@+id/add"
-            android:layout_width="150px"
-            android:layout_height="match_parent"
-            app:srcCompat="@android:drawable/ic_menu_add" />
+            android:layout_width="110px"
+            android:layout_height="100px"
+            android:background="@drawable/r1" />
 
     </LinearLayout>
 
@@ -47,6 +48,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:choiceMode="multipleChoice"
-        android:divider="#000000"
-        android:dividerHeight="2dp" />
+        android:dividerHeight="10dp"
+        android:padding="10dp"/>
 </LinearLayout>

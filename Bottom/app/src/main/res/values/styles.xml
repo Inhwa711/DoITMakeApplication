@@ -8,6 +8,9 @@
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
         <item name="android:windowFullscreen">true</item>
+
+        <!--custom font-family 적용-->
+        <item name="android:fontFamily">@font/custom_font_family</item>
     </style>
 
     <style name="Brown" parent="Theme.AppCompat.Light.DarkActionBar">
@@ -17,6 +20,9 @@
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
         <item name="android:windowFullscreen">true</item>
+
+        <!--custom font-family 적용-->
+        <item name="android:fontFamily">@font/custom_font_family</item>
     </style>
 
     <style name="Yellow" parent="Theme.AppCompat.Light.DarkActionBar">
@@ -26,6 +32,9 @@
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
         <item name="android:windowFullscreen">true</item>
+
+        <!--custom font-family 적용-->
+        <item name="android:fontFamily">@font/custom_font_family</item>
     </style>
 
     <style name="Dark" parent="Theme.AppCompat.DayNight.DarkActionBar">
@@ -36,6 +45,9 @@
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
         <item name="android:windowFullscreen">true</item>
+
+        <!--custom font-family 적용-->
+        <item name="android:fontFamily">@font/custom_font_family</item>
     </style>
 
 </resources>

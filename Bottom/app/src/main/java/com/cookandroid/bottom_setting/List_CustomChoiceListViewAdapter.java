@@ -1,21 +1,19 @@
 package com.cookandroid.bottom_setting;
 
 import android.content.Context;
-import android.graphics.drawable.Drawable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.CheckBox;
-import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.ArrayList;
 
 public class List_CustomChoiceListViewAdapter extends BaseAdapter {
-
+     String Goal=null;
     // Adapter에 추가된 데이터를 저장하기 위한 ArrayList
-    private ArrayList<List_Listview_Item> listViewItemListList = new ArrayList<List_Listview_Item>() ;
+    ArrayList<List_ListviewItem> listViewItemListList = new  ArrayList<List_ListviewItem>() ;
 
     // 체크박스
     private boolean mClick = false;
@@ -47,19 +45,18 @@ public class List_CustomChoiceListViewAdapter extends BaseAdapter {
         TextView sdateTextView = (TextView) convertView.findViewById(R.id.sdate) ;
         TextView edateTextView = (TextView) convertView.findViewById(R.id.edate) ;
         TextView etcTextView = (TextView) convertView.findViewById(R.id.etc) ;
-        ImageView buildingImageView = (ImageView) convertView.findViewById(R.id.building) ;
         TextView perTextView = (TextView) convertView.findViewById(R.id.per) ;
 
         // Data Set(listViewItemList)에서 position에 위치한 데이터 참조 획득
-        List_Listview_Item listListViewItem = listViewItemListList.get(position);
+        List_ListviewItem listListViewItem = listViewItemListList.get(position);
 
         // 아이템 내 각 위젯에 데이터 반영
         goalTextView.setText(listListViewItem.getGoal());
         sdateTextView.setText(listListViewItem.getSdate());
         edateTextView.setText(listListViewItem.getEdate());
         etcTextView.setText(listListViewItem.getEtc());
-        buildingImageView.setImageDrawable(listListViewItem.getBuilding());
         perTextView.setText(listListViewItem.getPer());
+
 
         // 체크박스
         CheckBox checkBox =  (CheckBox) convertView.findViewById(R.id.checkBox1);
@@ -78,6 +75,10 @@ public class List_CustomChoiceListViewAdapter extends BaseAdapter {
         mClick = bClick;
         notifyDataSetChanged();
     }
+    public String getGoal(int position) {
+
+        return Goal;
+    }
 
     // 지정한 위치(position)에 있는 데이터와 관계된 아이템(row)의 ID를 리턴. : 필수 구현
     @Override
@@ -88,28 +89,27 @@ public class List_CustomChoiceListViewAdapter extends BaseAdapter {
 
     // 지정한 위치(position)에 있는 데이터 리턴 : 필수 구현
     @Override
-    public Object getItem(int position) {
+    public List_ListviewItem getItem(int position) {
 
-        return listViewItemListList.get(position) ;
+        return listViewItemListList.get(position);
     }
 
     // 아이템 데이터 추가를 위한 함수.
-    public void addItem(String goal, String sdate, String edate, String etc, Drawable building, String per) {
-        List_Listview_Item item = new List_Listview_Item();
-
+    public void addItem(String goal, String sdate, String edate, String etc, String per) {
+        List_ListviewItem item = new List_ListviewItem();
+        Goal=goal;
         item.setGoal(goal);
         item.setSdate(sdate);
         item.setEdate(edate);
         item.setEtc(etc);
-        item.setBuilding(building);
         item.setPer(per);
 
         listViewItemListList.add(item);
     }
 
-    // 아이템 데이터 삭제를 위한 함수. (미완성)
+    // 아이템 데이터 삭제를 위한 함수. (미사용. 삭제시 확인 필요.)
     public void removeItem(int num) {
-        List_Listview_Item item = new List_Listview_Item();
+        List_ListviewItem item = new List_ListviewItem();
 
 
         listViewItemListList.remove(item);

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "175288453683",
+    "project_id": "hap1-62904",
+    "storage_bucket": "hap1-62904.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:175288453683:android:da8c8510e01835e9483146",
+        "android_client_info": {
+          "package_name": "com.cookandroid.bottom_setting"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "175288453683-of1nsbg6c0hcib7sj23n3rvjjrnpjkif.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCexIlUsdfsNdj3v_0BHkOFlXdDP50l5AY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "175288453683-of1nsbg6c0hcib7sj23n3rvjjrnpjkif.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

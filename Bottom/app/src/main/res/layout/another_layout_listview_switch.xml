@@ -12,5 +12,6 @@
         android:textSize="20sp"
         android:gravity="center_vertical"
         android:textColor="#BF000000"
+        android:fontFamily="@font/custom_font_family"
         android:text="Switch" />
 </LinearLayout>
